@@ -1,0 +1,159 @@
+
+body{
+  width: 100%;
+  overflow-x: hidden;
+}
+.navbar {
+  overflow: auto;
+}
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color:black;
+  font-family:Gadugi;
+  text-decoration: none;
+  font-size:25px;
+}
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+.navbar input[type=text] {
+  position: relative;
+  left: 75%;
+  width:200px;
+    padding: 6px 30px;
+    border:none;
+    border:1px solid #b0b0b0;
+    color:gray;
+    border-radius:4px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+nav{
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(184,184,184);
+}
+.title{
+  position: absolute; 
+  top:7px;
+  left:59px;
+}
+.mainhedding{
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  font-family:calibri;
+  font-size:35px;
+  color:lightblack;
+}
+.week1{
+  position: relative;
+  top: 200px;
+  border: 1px solid rgb(184,184,184);
+  font-family: calibri;
+}
+.week1 .one{
+  position: relative;
+  height: 50px;
+  font-weight: bold;
+  background-color: #b8b8b8;
+}
+.week1 .two{
+  height: 180px;
+  border-bottom:1px solid #b8b8b8;
+  font-family:calibri;
+}
+.week1 .two li{
+  cursor: pointer;
+}
+.week1 .three{
+  height: 30px;
+}
+.show {
+    display: block;
+}
+#displayunit{
+  display: none;
+}
+.fa-lock{
+  color:rgb(172,125,235);
+  position: relative;
+  left: 15px;
+  top:5px;
+}
+.week1 .one:hover{
+background-color:lightgray;
+}
+.chart{
+  height: 20px;
+  position: relative;
+  left:8%;
+  top: -25px;
+}
+
+
+*{
+    font-family: calibri;
+  }
+    .container{
+      width: 100%;
+    }
+    .step-pog-bar{
+      position: relative;
+      left: 10%;
+      margin-top: 20%;
+      counter-reset: step;
+    }
+    .step-pog-bar li{
+      list-style: none;
+      float: left;
+      width: 15%;
+      position: relative;
+      text-align: center;
+      color: gray;
+    }
+    .step-pog-bar li::before{
+      content:'';
+      counter-increment: step;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      border: 2px solid #ddd;
+      display: block;
+      text-align: center;
+      margin: 0 auto 10px auto;
+      border-radius: 50%;
+      background-color:#fff; 
+    }
+    .step-pog-bar li::after{
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: -50%;
+      width: 100%;
+      border: 2px solid #ddd;
+      z-index: -1;
+    }
+    .step-pog-bar li:first-child::after{
+      content:none;
+    }
+    .step-pog-bar li.active{
+      color: chartreuse;
+    }
+    .step-pog-bar li.active::before{
+      border-color: chartreuse;
+    }
+    .step-pog-bar li.active + li::after{
+      border-color: chartreuse;
+    }
+    .iconcal{
+      position:absolute;
+      top:16%;
+      left:46%;
+      z-index: 2;
+    }

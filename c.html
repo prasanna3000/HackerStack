@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+	<title>HackerStack-Online Training courses</title>
+<!--
+
+Template 2081 Solution
+
+http://www.tooplate.com/view/2081-solution
+
+-->
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+
+		<!-- animate -->
+		<link rel="stylesheet" href="css/animate.min.css">
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- font-awesome -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- google font -->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
+		<!-- custom -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" style="height: 40px; width: 40px; " href="images/titlelogo1.png">
+		<!-- Stepper CSS -->
+<link href="css/addons-pro/stepper.css" rel="stylesheet">
+<!-- Stepper CSS - minified-->
+<link href="css/addons-pro/stepper.min.css" rel="stylesheet">
+<style>
+    .smpl-step {
+        margin-top: 40px;
+    }
+    .smpl-step {
+        border-bottom: solid 1px #e0e0e0;
+        padding: 0 0 10px 0;
+    }
+
+    .smpl-step > .smpl-step-step {
+        padding: 0;
+        position: relative;
+    }   
+
+    .smpl-step > .smpl-step-step .smpl-step-num {
+        font-size: 17px;
+        margin-top: -20px;
+        margin-left: 50px;
+    }
+
+    .smpl-step > .smpl-step-step .smpl-step-info {
+        font-size: 10px;
+        padding-top: 27px;
+        margin-left: 30px;
+    }
+
+    .smpl-step > .smpl-step-step > .smpl-step-icon {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        display: block;
+        background: #428BCA;
+        top: 45px;
+        left: 50%;
+        margin-top: -35px;
+        margin-left: -15px;
+        border-radius: 50%;
+    }
+
+    .smpl-step > .smpl-step-step > .progress {
+        position: relative;
+        border-radius: 0px;
+        height: 8px;
+        box-shadow: none;
+        margin-top: 37px;
+    }
+
+   .smpl-step > .smpl-step-step > .progress > .progress-bar {
+       width: 0px;
+       box-shadow: none;
+       background:  #5CB85C;
+   }
+
+    .smpl-step > .smpl-step-step.complete > .progress > .progress-bar {
+        width: 100%;
+    }
+
+    .smpl-step > .smpl-step-step.active > .progress > .progress-bar {
+        width: 50%;
+    }
+
+    .smpl-step > .smpl-step-step:first-child.active > .progress > .progress-bar {
+        width: 0%;
+    }
+
+    .smpl-step > .smpl-step-step:last-child.active > .progress > .progress-bar {
+        width: 100%;
+    }
+
+    .smpl-step > .smpl-step-step.disabled > .smpl-step-icon {
+        background-color: #f5f5f5;
+    }
+
+    .smpl-step > .smpl-step-step.disabled > .smpl-step-icon:after {
+        opacity: 0;
+    }
+
+    .smpl-step > .smpl-step-step:first-child > .progress {
+        left: 50%;
+        width: 50%;
+    }
+
+    .smpl-step > .smpl-step-step:last-child > .progress {
+        width: 50%;
+    }
+
+    .smpl-step > .smpl-step-step.disabled a.smpl-step-icon {
+        pointer-events: none;
+    }
+    .shadow-lg{
+    	box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+            0 5px 15px 0 rgba(0,0,0,0.08);
+    }
+</style>
+
+<!-- Stepper JavaScript -->
+<script type="text/javascript" src="js/addons-pro/stepper.js"></script>
+<!-- Stepper JavaScript - minified -->
+<script type="text/javascript" src="js/addons-pro/stepper.min.js"></script>
+
+	</head>
+	<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+
+		<!-- start navigation -->
+		<div class="navbar navbar-fixed-top navbar-default" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand">
+						<img src="images/titlelogo2.png" height="50" width="50" class="img-responsive" alt="logo" style="position: relative;top: 10px;">
+					<span style="color: rgb(172,125,325);position: relative;top: -15px;left:45px;">Hacker</span><span style="color:#05464F;position: relative;top: -15px;left:45px;">Stack</span></a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html" class="smoothScroll">HOME</a></li>
+						<li><a href="#pricing" class="smoothScroll">OTHER COURSES</a></li>
+						<li><a href="#portfolio" class="smoothScroll">HACKATHONS</a></li>
+						<li><a href="compiler.html" class="smoothScroll">CODEGROUND</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- end navigation -->
+
+		<!-- start home -->
+		<section id="home" class="text-center" style="overflow-x:hidden; ">
+		  <div class="templatemo_headerimage">
+		    <div class="flexslider">
+		      <ul class="slides">
+		        <li>
+		        	<img src="images/one1.jpg" alt="Slide 1">
+		        	<div class="slider-caption">
+					    <div class="templatemo_homewrapper">
+					      <h1 class="wow fadeInDown" data-wow-delay="2000" style="color:white;font-size: 50px;">HackerStack</h1>
+					      <h2 class="wow fadeInDown" data-wow-delay="2000">
+							<span style="color:#05464F;font-size: 40px;">LEARN TO CODE &AMP;CODE TO LEARN</span>
+						</h2>
+						<a href="magazine/category.html" class="smoothScroll btn btn-default wow fadeInDown" data-wow-delay="2000">Take me to the Course</a>	
+					    </div>
+				  	</div>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>				
+		</section>
+		<!-- end home -->
+
+		<!-- start service -->
+		<div id="service">
+			<div class="container">
+				<div class="row">
+					<div class="container">
+			<h3 style="color: #93ca3a;font-size: 40px;">Pathway to -> C </h3><br><br><br><br>
+    <div class="row smpl-step" style="border-bottom: 0; min-width: 550px;">
+        <div class="col-xs-2 smpl-step-step complete">
+            <div class="text-center smpl-step-num">Week 1</div>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+            <a class="smpl-step-icon"><i class="fa fa-user" style="font-size: 30px; padding-left: 22px; padding-top:17px; color:white;"></i></a>
+            <div class="smpl-step-info text-center">Introduction, Basic Concepts.</div>
+        </div>
+
+        <div class="col-xs-2 smpl-step-step complete">           
+            <div class="text-center smpl-step-num">Week 2</div>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+            <a class="smpl-step-icon"><i class="fa fa-clock-o" style="font-size: 30px; padding-left: 22px; padding-top: 17px; color:white;"></i></a>
+            <div class="smpl-step-info text-center">Tokens,Statements, small Programs</div>
+        </div>
+        <div class="col-xs-2 smpl-step-step active">          
+            <div class="text-center smpl-step-num">Week 3</div>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+            <a class="smpl-step-icon"><i class="fa fa-repeat" style="font-size: 30px; padding-left:22px; padding-top: 17px; color:white;"></i></a>
+            <div class="smpl-step-info text-center">Loops,Files,structures.</div>
+        </div>
+        <div class="col-xs-2 smpl-step-step disabled">           
+            <div class="text-center smpl-step-num">Week 4</div>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+            <a class="smpl-step-icon"><i class="fa fa-certificate" style="font-size: 30px; padding-left:22px; padding-top: 17px; color:black; opacity: 0.3;"></i></a>
+            <div class="smpl-step-info text-center">Files and Pointers</div>
+        </div>
+        <div class="col-xs-2 smpl-step-step disabled">           
+            <div class="text-center smpl-step-num">Week 5</div>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+            <a class="smpl-step-icon"><i class="fa fa-check-circle" style="font-size: 30px; padding-left: 22px; padding-top: 17px; color:black; opacity: 0.3;"></i></a>
+            <div class="smpl-step-info text-center">Advanced C</div><br><br><br>
+        </div>
+    </div>
+</div>
+
+</div>
+			</div>
+		</div>
+		<!-- end service -->
+
+		<!-- start divider -->
+		<div id="divider">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-1 col-sm-1"></div>
+					<div class="col-md-8 col-sm-8">
+						<h2 class="wow bounce">We provide <strong>Creative ways</strong></h2>
+						<h3 class="wow fadeIn" data-wow-delay="0.6s"><mark>Creative</mark> Programmers &amp; <mark>Talented</mark> Developers</h3>
+						<p class="wow fadeInUp" data-wow-delay="0.9s">Anybody can write the code that machine can understand but only few can code that humans understand.Be smart enough to code yourself.</p>
+					</div>
+					<div class="col-md-2 col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<!-- end divider -->
+
+		<!-- start about -->
+		<div id="about" style="overflow: hidden;height:700px;" >
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 wow fadeInLeft" data-wow-delay="0.9s" >
+						<h3>About C</h3>
+						<h4>Your brain on C. </h4>
+						<p>C is a structured programming language developed by <span><a href="https://en.wikipedia.org/wiki/Dennis_Ritchie">Dennis Ritchie</a></span> in 1973 at Bell Laboratories. It is one of the most popular computer languages today because of its structure, high-level abstraction, machine independent feature etc. C language was developed to write the UNIX operating system, hence it is strongly associated with UNIX, which is one of the most popular network operating system in use today and heart of internet data superhighway.</p>
+						<p>C language is a very good language to introduce yourself to the programming world, as it is a simple procedural language which is capable of doing wonders.</p>
+						<p>Happy Coding :)</p><br>
+					</div>
+					<div class="col-md-6 col-sm-6 fadeInRight" style="width:500px;" id="photo">
+						<img src="images/dennis.jpg" style="border:8px solid white;position: relative;left: 25%;top:50px;" class="shadow-lg" >
+						</div>
+					</div>
+				</div>
+		</div>
+		<!-- end about -->
+		
+	<!-- start team -->
+		<div id="team" style="position: relative;top:-120px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="wow bounce">Why to learn Coding?</h2>
+						<br>
+					</div>
+					<div class="col-md-12 col-sm-12 wow fadeIn" data-wow-delay="0.6s">
+						<video src="video/Why Programming Is Important.mp4" controls="" style="width: 100%;"></video>
+						</div>
+					
+			</div>
+		</div>
+		<!-- end team -->
+
+	
+
+		<!-- start pricing -->
+		<div id="pricing" class="text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 wow bounce">
+						<h2>Our Catalogue</h2>
+					</div>
+					<div class="col-sm-4 col-md-4 wow fadeInUp" data-wow-delay="0.9s">
+						<div class="plan plan_two">
+							<h4 class="plan_title">c++ Language</h4>
+							<ul>
+								<li>5 weeks</li>
+								<li>10 Assignments</li>
+								<li>5 Challenges</li>
+							</ul>
+							<button class="btn btn-warning">COMING SOON</button>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-4 wow fadeInDown" data-wow-delay="1s">
+						<div class="plan plan_three">
+							<h4 class="plan_title">Python</h4>
+							<ul>
+								<li>5 weeks</li>
+								<li>10 Assignments</li>
+								<li>5 Challenges</li>
+							</ul>
+							<button class="btn btn-warning">COMING SOON</button>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-4 wow fadeInRight" data-wow-delay="1.3s">
+						<div class="plan plan_four">
+							<h4 class="plan_title">Java</h4>
+							<ul>
+								<li>5 weeks</li>
+								<li>10 Assignments</li>
+								<li>5 Challenges</li>
+							</ul>
+							<button class="btn btn-warning">COMING SOON</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end pricing -->
+
+		<!-- start portfolio -->
+		<div id="portfolio">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="wow bounce">Hackathons</h2>
+							<div class="iso-section wow fadeIn" data-wow-delay="0.6s">
+
+								<ul class="filter-wrapper clearfix">
+                   					 <li><a href="#" data-filter="*" class="selected opc-main-bg">All</a></li>
+                   					 <li><a href="#" class="opc-main-bg" data-filter=".graphic">C-Language</a></li>
+                   					 <li><a href="#" class="opc-main-bg" data-filter=".photoshop">C++</a></li>
+                    				<li><a href="#" class="opc-main-bg" data-filter=".wallpaper">Java</a></li>
+                    				<li><a href="#" class="opc-main-bg" data-filter=".wallpaper">Python</a></li>
+               					 </ul>
+
+               				 	<div class="iso-box-section">
+               				 		<div class="iso-box-wrapper col4-iso-box">
+
+               				 			<div class="iso-box graphic photoshop wallpaper col-md-4 col-sm-6 col-xs-12">
+               				 				<div class="portfolio-thumb">
+               				 					<img src="images/portfolio-img1.jpg" class="fluid-img" alt="portfolio img">
+               				 						<div class="portfolio-overlay">
+               				 							<a href="#" class="fa fa-search"></a>
+               				 							<a href="#" class="fa fa-link"></a>
+               				 							<h4>Milkyway</h4>
+               				 							<p>Choose your</p>
+               				 						</div>
+               				 				</div>
+               				 			</div>
+
+               				 			<div class="iso-box graphic wallpaper col-md-4 col-sm-6 col-xs-12">
+               				 				<div class="portfolio-thumb">
+               				 					<img src="images/portfolio-img2.jpg" class="fluid-img" alt="portfolio img">
+               				 						<div class="portfolio-overlay">
+               				 							<a href="#" class="fa fa-search"></a>
+               				 							<a href="#" class="fa fa-link"></a>
+               				 							<h4>Ancient Greek</h4>
+               				 							<p>C++ Prime Challenge</p>
+               				 						</div>
+               				 				</div>
+               				 			</div>
+
+               				 			<div class="iso-box wallpaper col-md-4 col-sm-6 col-xs-12">
+               				 				<div class="portfolio-thumb">
+               				 					<img src="images/portfolio-img3.jpg" class="fluid-img" alt="portfolio img">
+               				 						<div class="portfolio-overlay">
+               				 							<a href="#" class="fa fa-search"></a>
+               				 							<a href="#" class="fa fa-link"></a>
+               				 							<h4>Asteroid</h4>
+               				 							<p>JAVA Prime Challenge</p>
+               				 						</div>
+               				 				</div>
+               				 			</div>
+
+               				 			<div class="iso-box graphic col-md-4 col-sm-6 col-xs-12">
+               				 				<div class="portfolio-thumb">
+               				 					<img src="images/portfolio-img4.jpg" class="fluid-img" alt="portfolio img">
+               				 						<div class="portfolio-overlay">
+               				 							<a href="#" class="fa fa-search"></a>
+               				 							<a href="#" class="fa fa-link"></a>
+               				 							<h4>Dark Matter</h4>
+               				 							<p>Python Prime Challenge</p>
+               				 						</div>
+               				 				</div>
+               				 			</div>
+
+               				 			<div class="iso-box wallpaper col-md-4 col-sm-6 col-xs-12">
+               				 				<div class="portfolio-thumb">
+               				 					<img src="images/portfolio-img5.jpg" class="fluid-img" alt="portfolio img">
+               				 						<div class="portfolio-overlay">
+               				 							<a href="#" class="fa fa-search"></a>
+               				 							<a href="#" class="fa fa-link"></a>
+               				 							<h4>White Universe</h4>
+               				 							<p>Choose your own language</p>
+               				 						</div>
+               				 				</div>
+               				 			</div>
+
+               				 			<div class="iso-box graphic photoshop col-md-4 col-sm-6 col-xs-12">
+               				 				<div class="portfolio-thumb">
+               				 					<img src="images/portfolio-img6.jpg" class="fluid-img" alt="portfolio img">
+               				 						<div class="portfolio-overlay">
+               				 							<a href="#" class="fa fa-search"></a>
+               				 							<a href="#" class="fa fa-link"></a>
+               				 							<h4>Big Bang</h4>
+               				 							<p>Placement Practice Test</p>
+               				 						</div>
+               				 				</div>
+               				 			</div>
+
+               				 		</div>
+               				 	</div>
+
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end portfolio -->
+
+		<!-- start contact -->
+		<div id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-4 wow fadeInLeft" data-wow-delay="0.6s">
+						<h2><strong>hackerstack.co.in</strong></h2>
+						<p>A multipurpose platform for the coders.</p>
+						<ul class="social-icon">
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-instagram"></a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.9s">
+						<address>
+							<h3>Visit Office</h3>
+							<p><i class="fa fa-map-marker too-icon"></i>Vadlamudi-522213</p>
+							<p><i class="fa fa-phone too-icon"></i>+91-7995954390</p>
+							<p><i class="fa fa-envelope-o too-icon"></i> hackerstacktuts@gmail.com</p>
+						</address>
+					</div>
+					<form action="#" method="post" class="col-md-6 col-sm-4" id="contact-form" role="form">
+							<div class="col-md-6 col-sm-12 wow fadeIn" data-wow-delay="0.3s">
+								<input name="name" type="text" class="form-control" id="name" placeholder="Name">
+							</div>
+							<div class="col-md-6 col-sm-12 wow fadeIn" data-wow-delay="0.3s">
+								<input name="email" type="email" class="form-control" id="email" placeholder="Email">
+							</div>
+							<div class="col-md-12 col-sm-12 wow fadeIn" data-wow-delay="0.9s">
+								<textarea name="message" rows="5" class="form-control" id="message" placeholder="Message"></textarea>
+							</div>
+							<div class="col-md-offset-9 col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+								<input name="submit" type="submit" class="form-control" id="submit" value="Send">
+							</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- end contact -->
+		
+		
+		<!-- start footer -->
+		<footer>
+			<div class="container" style="height:20px;">
+				<div class="row">
+                            <img  src="images/titlelogo2.png" height="60" width="75" style="position: relative;top: -10px;left:0;" >
+                            <span style="color:rgb(172,125,235);font-size:30px;">Hacker</span> <span style="color:#05464F;font-size:30px;">Stack</span>
+                            <p style="color:green; font-size:20px;position: relative;left: 20px;"> Place where coding meets fun!</p>
+                            </div>
+                            <div style="height:50px;"> 
+                         <span style="position: relative;top:20px;left:20px;">&copy; Copyright 2018. All Rights Reserved. | This website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#">Technical Duo</a></span>
+                    	</div>
+				</div>
+		</footer>
+		<!-- end footer -->
+
+
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- isotope -->
+		<script src="js/isotope.js"></script>
+		<!-- images loaded -->
+   		<script src="js/imagesloaded.min.js"></script>
+   		<!-- wow -->
+		<script src="js/wow.min.js"></script>
+		<!-- smoothScroll -->
+		<script src="js/smoothscroll.js"></script>
+		<!-- jquery flexslider -->
+		<script src="js/jquery.flexslider.js"></script>
+		<!-- custom -->
+		<script src="js/custom.js"></script>
+	</body>
+</html>

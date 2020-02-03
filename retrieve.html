@@ -1,0 +1,17 @@
+<div data-id="example-widget" class="se-widget" data-widget="{cS7MxFVxCm}"></div>
+<script>
+    SE.ready(function() {
+
+        var afterSendSubmission = function(data) {
+
+            $('#result').html('')
+                .append("> data.submissionId: " + data.submissionId + "<br><br>");
+        };
+
+        var SEWidget = SE.widget("example-widget");
+        SEWidget.events.subscribe('afterSendSubmission', afterSendSubmission);
+    });
+</script>
+
+Data:
+<pre id="result" style="height: 100px;">Submit submission to see the result</pre>

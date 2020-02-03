@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Editor</title>
+  <link rel="stylesheet" href="fontawesome-free-5.7.1-web/css/all.css">
+    <script defer src="fontawesome-free-5.7.1-web/js/all.js"></script>
+  <style type="text/css" media="screen">
+    body {
+        overflow: hidden;
+    }
+
+    #editor1 {
+        margin: 0;
+        position: absolute;
+        top: 50px;
+        bottom: 0;
+        left:23px;
+        width:600px;
+        height:400px;
+    }
+  </style>
+</head>
+<body>
+<pre id="editor1">
+#include&lt;stdio.h&gt;
+{
+  int j=0;
+  do
+  {
+    printf("Value of variable j is: %d\n", j);
+    j++;
+  }while (j<=3);
+  return 0;
+}</pre>
+<script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor1");
+    editor.setTheme("ace/theme/twilight");
+    editor.session.setMode("ace/mode/c_cpp");
+    document.getElementById('editor1').style.fontSize='18px';
+    editor.setHighlightActiveLine(false);
+</script>
+<script type="text/javascript">
+   $(".fa-expand-arrow1").click(function(){
+
+var clone = $(this).clone().addClass('active');
+var parent = $(this).parent();
+var pos = $(this).position();
+
+$(this).append(clone);
+
+console.log(pos);
+
+clone.css({'position' : 'absolute', left: pos.left + 'px', top: pos.top + 'px'}).animate({
+    width: '80%', 
+    height : '50%',
+    top: 0,
+    left: '10%'
+},300);
+
+
+});
+</script>
+
+<script src="src-min-noconflict/mode-c_cpp.js"></script>
+<script src="src-min/mode-c_cpp.js"></script>
+<script src="src/mode-c_cpp.js"></script>
+ </body>
+</html>
